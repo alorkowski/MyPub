@@ -1,6 +1,6 @@
 import Foundation
 
-class CocktailManager {
+final class CocktailManager {
     static let shared = CocktailManager()
     var cocktails: [Cocktail] = []
 

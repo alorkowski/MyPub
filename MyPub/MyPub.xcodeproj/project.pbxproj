@@ -11,6 +11,11 @@
 		73460B27237CAC4900795C4B /* ProgrammaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73460B26237CAC4900795C4B /* ProgrammaticView.swift */; };
 		73460B2A237CAE0800795C4B /* Cocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73460B29237CAE0800795C4B /* Cocktail.swift */; };
 		73460B33237CBC9900795C4B /* CocktailManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73460B32237CBC9900795C4B /* CocktailManager.swift */; };
+		73460B36237CBF5B00795C4B /* SuggestedDrinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73460B35237CBF5B00795C4B /* SuggestedDrinksViewController.swift */; };
+		73460B3A237CBFC500795C4B /* SuggestedDrinksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73460B39237CBFC500795C4B /* SuggestedDrinksViewModel.swift */; };
+		73460B3C237CC04600795C4B /* DrinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73460B3B237CC04600795C4B /* DrinkTableViewCell.swift */; };
+		73460B3E237CC13C00795C4B /* IngredientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73460B3D237CC13C00795C4B /* IngredientManager.swift */; };
+		73460B40237CC1A800795C4B /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73460B3F237CC1A800795C4B /* Ingredient.swift */; };
 		73FB5033237CA524009561F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB5032237CA524009561F0 /* AppDelegate.swift */; };
 		73FB503C237CA568009561F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73FB503B237CA568009561F0 /* Assets.xcassets */; };
 		73FB504A237CA56B009561F0 /* MyPubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB5049237CA56B009561F0 /* MyPubTests.swift */; };
@@ -34,6 +39,11 @@
 		73460B26237CAC4900795C4B /* ProgrammaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticView.swift; sourceTree = "<group>"; };
 		73460B29237CAE0800795C4B /* Cocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocktail.swift; sourceTree = "<group>"; };
 		73460B32237CBC9900795C4B /* CocktailManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailManager.swift; sourceTree = "<group>"; };
+		73460B35237CBF5B00795C4B /* SuggestedDrinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedDrinksViewController.swift; sourceTree = "<group>"; };
+		73460B39237CBFC500795C4B /* SuggestedDrinksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedDrinksViewModel.swift; sourceTree = "<group>"; };
+		73460B3B237CC04600795C4B /* DrinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTableViewCell.swift; sourceTree = "<group>"; };
+		73460B3D237CC13C00795C4B /* IngredientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientManager.swift; sourceTree = "<group>"; };
+		73460B3F237CC1A800795C4B /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		73FB502F237CA524009561F0 /* MyPub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73FB5032237CA524009561F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73FB503B237CA568009561F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				73460B29237CAE0800795C4B /* Cocktail.swift */,
+				73460B3F237CC1A800795C4B /* Ingredient.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -104,8 +115,27 @@
 			isa = PBXGroup;
 			children = (
 				73460B32237CBC9900795C4B /* CocktailManager.swift */,
+				73460B3D237CC13C00795C4B /* IngredientManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		73460B37237CBF7C00795C4B /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				73460B3B237CC04600795C4B /* DrinkTableViewCell.swift */,
+				73460B38237CBF8C00795C4B /* SuggestedDrink */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		73460B38237CBF8C00795C4B /* SuggestedDrink */ = {
+			isa = PBXGroup;
+			children = (
+				73460B35237CBF5B00795C4B /* SuggestedDrinksViewController.swift */,
+				73460B39237CBFC500795C4B /* SuggestedDrinksViewModel.swift */,
+			);
+			path = SuggestedDrink;
 			sourceTree = "<group>";
 		};
 		73FB5026237CA524009561F0 = {
@@ -130,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				73FB5032237CA524009561F0 /* AppDelegate.swift */,
+				73460B37237CBF7C00795C4B /* Features */,
 				73460B34237CBEC200795C4B /* Managers */,
 				73460B2B237CAE7A00795C4B /* Models */,
 				73460B25237CABBE00795C4B /* Navigation */,
@@ -252,8 +283,13 @@
 			files = (
 				73FB5055237CA82F009561F0 /* FeatureTabBarController.swift in Sources */,
 				73460B27237CAC4900795C4B /* ProgrammaticView.swift in Sources */,
+				73460B40237CC1A800795C4B /* Ingredient.swift in Sources */,
+				73460B3A237CBFC500795C4B /* SuggestedDrinksViewModel.swift in Sources */,
 				73460B2A237CAE0800795C4B /* Cocktail.swift in Sources */,
 				73FB5033237CA524009561F0 /* AppDelegate.swift in Sources */,
+				73460B36237CBF5B00795C4B /* SuggestedDrinksViewController.swift in Sources */,
+				73460B3C237CC04600795C4B /* DrinkTableViewCell.swift in Sources */,
+				73460B3E237CC13C00795C4B /* IngredientManager.swift in Sources */,
 				73460B33237CBC9900795C4B /* CocktailManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,7 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MyPub/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyPub/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -414,7 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MyPub/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyPub/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
