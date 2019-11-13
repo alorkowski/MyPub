@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		73460B24237CAA8000795C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73460B23237CAA8000795C4B /* LaunchScreen.storyboard */; };
+		73460B27237CAC4900795C4B /* ProgrammaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73460B26237CAC4900795C4B /* ProgrammaticView.swift */; };
 		73FB5033237CA524009561F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB5032237CA524009561F0 /* AppDelegate.swift */; };
 		73FB503C237CA568009561F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73FB503B237CA568009561F0 /* Assets.xcassets */; };
 		73FB504A237CA56B009561F0 /* MyPubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB5049237CA56B009561F0 /* MyPubTests.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		73460B23237CAA8000795C4B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		73460B26237CAC4900795C4B /* ProgrammaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticView.swift; sourceTree = "<group>"; };
 		73FB502F237CA524009561F0 /* MyPub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73FB5032237CA524009561F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73FB503B237CA568009561F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,9 +65,27 @@
 			children = (
 				73FB5056237CA93A009561F0 /* CocktailRecipes.json */,
 				73FB5058237CA93A009561F0 /* Ingredients.json */,
+				73FB5040237CA568009561F0 /* Info.plist */,
 				73460B23237CAA8000795C4B /* LaunchScreen.storyboard */,
+				73FB503B237CA568009561F0 /* Assets.xcassets */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		73460B25237CABBE00795C4B /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				73FB5054237CA82F009561F0 /* FeatureTabBarController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		73460B28237CAC6500795C4B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				73460B26237CAC4900795C4B /* ProgrammaticView.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		73FB5026237CA524009561F0 = {
@@ -90,9 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				73FB5032237CA524009561F0 /* AppDelegate.swift */,
-				73FB503B237CA568009561F0 /* Assets.xcassets */,
-				73FB5040237CA568009561F0 /* Info.plist */,
-				73FB5054237CA82F009561F0 /* FeatureTabBarController.swift */,
+				73460B25237CABBE00795C4B /* Navigation */,
+				73460B28237CAC6500795C4B /* Protocols */,
 				73460B22237CAA6100795C4B /* SupportingFiles */,
 			);
 			path = MyPub;
@@ -210,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73FB5055237CA82F009561F0 /* FeatureTabBarController.swift in Sources */,
+				73460B27237CAC4900795C4B /* ProgrammaticView.swift in Sources */,
 				73FB5033237CA524009561F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
