@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		73460B24237CAA8000795C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73460B23237CAA8000795C4B /* LaunchScreen.storyboard */; };
 		73460B27237CAC4900795C4B /* ProgrammaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73460B26237CAC4900795C4B /* ProgrammaticView.swift */; };
+		73460B2A237CAE0800795C4B /* Cocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73460B29237CAE0800795C4B /* Cocktail.swift */; };
+		73460B33237CBC9900795C4B /* CocktailManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73460B32237CBC9900795C4B /* CocktailManager.swift */; };
 		73FB5033237CA524009561F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB5032237CA524009561F0 /* AppDelegate.swift */; };
 		73FB503C237CA568009561F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73FB503B237CA568009561F0 /* Assets.xcassets */; };
 		73FB504A237CA56B009561F0 /* MyPubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB5049237CA56B009561F0 /* MyPubTests.swift */; };
@@ -30,6 +32,8 @@
 /* Begin PBXFileReference section */
 		73460B23237CAA8000795C4B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73460B26237CAC4900795C4B /* ProgrammaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticView.swift; sourceTree = "<group>"; };
+		73460B29237CAE0800795C4B /* Cocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocktail.swift; sourceTree = "<group>"; };
+		73460B32237CBC9900795C4B /* CocktailManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailManager.swift; sourceTree = "<group>"; };
 		73FB502F237CA524009561F0 /* MyPub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73FB5032237CA524009561F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73FB503B237CA568009561F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +92,22 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		73460B2B237CAE7A00795C4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				73460B29237CAE0800795C4B /* Cocktail.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		73460B34237CBEC200795C4B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				73460B32237CBC9900795C4B /* CocktailManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		73FB5026237CA524009561F0 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				73FB5032237CA524009561F0 /* AppDelegate.swift */,
+				73460B34237CBEC200795C4B /* Managers */,
+				73460B2B237CAE7A00795C4B /* Models */,
 				73460B25237CABBE00795C4B /* Navigation */,
 				73460B28237CAC6500795C4B /* Protocols */,
 				73460B22237CAA6100795C4B /* SupportingFiles */,
@@ -230,7 +252,9 @@
 			files = (
 				73FB5055237CA82F009561F0 /* FeatureTabBarController.swift in Sources */,
 				73460B27237CAC4900795C4B /* ProgrammaticView.swift in Sources */,
+				73460B2A237CAE0800795C4B /* Cocktail.swift in Sources */,
 				73FB5033237CA524009561F0 /* AppDelegate.swift in Sources */,
+				73460B33237CBC9900795C4B /* CocktailManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
