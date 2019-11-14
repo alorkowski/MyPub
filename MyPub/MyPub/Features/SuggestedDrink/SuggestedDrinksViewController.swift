@@ -57,5 +57,14 @@ extension SuggestedDrinksViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.cellForRow(at: indexPath)?.isSelected = false
+
+        let cocktailDetailTableViewModel = CocktailDetailTableViewModel()
+        cocktailDetailTableViewModel.cocktail = self.suggestedDrinksViewModel.suggestedCocktails[indexPath.row]
+
+        let cocktailDetailTableViewController = CocktailDetailTableViewController()
+        cocktailDetailTableViewController.cocktailDetailTableViewModel = cocktailDetailTableViewModel
+        cocktailDetailTableViewController.title = self.suggestedDrinksViewModel.suggestedCocktails[indexPath.row].name
+
+        self.navigationController?.pushViewController(cocktailDetailTableViewController, animated: true)
     }
 }

@@ -16,6 +16,11 @@
 		73460B3C237CC04600795C4B /* DrinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73460B3B237CC04600795C4B /* DrinkTableViewCell.swift */; };
 		73460B3E237CC13C00795C4B /* IngredientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73460B3D237CC13C00795C4B /* IngredientManager.swift */; };
 		73460B40237CC1A800795C4B /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73460B3F237CC1A800795C4B /* Ingredient.swift */; };
+		73A8C2A9237CD1AB002BA970 /* CocktailDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A8C2A8237CD1AB002BA970 /* CocktailDetailTableViewController.swift */; };
+		73A8C2AB237CD1EC002BA970 /* CocktailDetailTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A8C2AA237CD1EC002BA970 /* CocktailDetailTableViewModel.swift */; };
+		73A8C2AD237CD23C002BA970 /* CocktailDetailImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A8C2AC237CD23C002BA970 /* CocktailDetailImageTableViewCell.swift */; };
+		73A8C2AF237CD252002BA970 /* CocktailDetailIngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A8C2AE237CD252002BA970 /* CocktailDetailIngredientTableViewCell.swift */; };
+		73A8C2B1237CD267002BA970 /* CocktailDetailInstructionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A8C2B0237CD267002BA970 /* CocktailDetailInstructionTableViewCell.swift */; };
 		73FB5033237CA524009561F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB5032237CA524009561F0 /* AppDelegate.swift */; };
 		73FB503C237CA568009561F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73FB503B237CA568009561F0 /* Assets.xcassets */; };
 		73FB504A237CA56B009561F0 /* MyPubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB5049237CA56B009561F0 /* MyPubTests.swift */; };
@@ -44,6 +49,11 @@
 		73460B3B237CC04600795C4B /* DrinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTableViewCell.swift; sourceTree = "<group>"; };
 		73460B3D237CC13C00795C4B /* IngredientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientManager.swift; sourceTree = "<group>"; };
 		73460B3F237CC1A800795C4B /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		73A8C2A8237CD1AB002BA970 /* CocktailDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailTableViewController.swift; sourceTree = "<group>"; };
+		73A8C2AA237CD1EC002BA970 /* CocktailDetailTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailTableViewModel.swift; sourceTree = "<group>"; };
+		73A8C2AC237CD23C002BA970 /* CocktailDetailImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailImageTableViewCell.swift; sourceTree = "<group>"; };
+		73A8C2AE237CD252002BA970 /* CocktailDetailIngredientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailIngredientTableViewCell.swift; sourceTree = "<group>"; };
+		73A8C2B0237CD267002BA970 /* CocktailDetailInstructionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailInstructionTableViewCell.swift; sourceTree = "<group>"; };
 		73FB502F237CA524009561F0 /* MyPub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73FB5032237CA524009561F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73FB503B237CA568009561F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				73460B3B237CC04600795C4B /* DrinkTableViewCell.swift */,
+				73A8C2B2237CD278002BA970 /* CocktailDetail */,
 				73460B38237CBF8C00795C4B /* SuggestedDrink */,
 			);
 			path = Features;
@@ -136,6 +147,18 @@
 				73460B39237CBFC500795C4B /* SuggestedDrinksViewModel.swift */,
 			);
 			path = SuggestedDrink;
+			sourceTree = "<group>";
+		};
+		73A8C2B2237CD278002BA970 /* CocktailDetail */ = {
+			isa = PBXGroup;
+			children = (
+				73A8C2AC237CD23C002BA970 /* CocktailDetailImageTableViewCell.swift */,
+				73A8C2AE237CD252002BA970 /* CocktailDetailIngredientTableViewCell.swift */,
+				73A8C2B0237CD267002BA970 /* CocktailDetailInstructionTableViewCell.swift */,
+				73A8C2A8237CD1AB002BA970 /* CocktailDetailTableViewController.swift */,
+				73A8C2AA237CD1EC002BA970 /* CocktailDetailTableViewModel.swift */,
+			);
+			path = CocktailDetail;
 			sourceTree = "<group>";
 		};
 		73FB5026237CA524009561F0 = {
@@ -284,9 +307,14 @@
 				73FB5055237CA82F009561F0 /* FeatureTabBarController.swift in Sources */,
 				73460B27237CAC4900795C4B /* ProgrammaticView.swift in Sources */,
 				73460B40237CC1A800795C4B /* Ingredient.swift in Sources */,
+				73A8C2A9237CD1AB002BA970 /* CocktailDetailTableViewController.swift in Sources */,
 				73460B3A237CBFC500795C4B /* SuggestedDrinksViewModel.swift in Sources */,
 				73460B2A237CAE0800795C4B /* Cocktail.swift in Sources */,
+				73A8C2AB237CD1EC002BA970 /* CocktailDetailTableViewModel.swift in Sources */,
 				73FB5033237CA524009561F0 /* AppDelegate.swift in Sources */,
+				73A8C2AD237CD23C002BA970 /* CocktailDetailImageTableViewCell.swift in Sources */,
+				73A8C2AF237CD252002BA970 /* CocktailDetailIngredientTableViewCell.swift in Sources */,
+				73A8C2B1237CD267002BA970 /* CocktailDetailInstructionTableViewCell.swift in Sources */,
 				73460B36237CBF5B00795C4B /* SuggestedDrinksViewController.swift in Sources */,
 				73460B3C237CC04600795C4B /* DrinkTableViewCell.swift in Sources */,
 				73460B3E237CC13C00795C4B /* IngredientManager.swift in Sources */,
