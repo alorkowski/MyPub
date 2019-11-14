@@ -2,16 +2,17 @@ import Foundation
 
 final class CocktailManager {
     static let shared = CocktailManager()
-    var cocktails: [Cocktail] = []
+    lazy var cocktails: [Cocktail] = {
+        guard let path = Bundle.main.path(forResource: "CocktailRecipes", ofType: "json"),
+            let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped),
+            let jsonArray = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [[String: Any]]
+            else { return [] }
+        return jsonArray.compactMap( { Cocktail(from: $0)} )
+    }()
 
     func loadCocktailData(completion: @escaping () -> Void) {
-        DispatchQueue.global().async {
-            guard let path = Bundle.main.path(forResource: "CocktailRecipes", ofType: "json"),
-                let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped),
-                let jsonArray = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [[String: Any]]
-                else { return }
-            let cocktailsArray = jsonArray.compactMap( { Cocktail(from: $0)} )
-            self.cocktails = cocktailsArray
+        DispatchQueue.global().async { [weak self] in
+            let _ = self?.cocktails
             completion()
         }
     }
