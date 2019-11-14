@@ -77,7 +77,7 @@ extension CocktailDetailTableViewController {
         case 1:
             let cell = CocktailDetailIngredientTableViewCell.dequeue(from: tableView, for: indexPath)
             cell.configure(with: self.cocktailDetailTableViewModel.cocktail?.ingredients[indexPath.row],
-                           and: self.cocktailDetailTableViewModel.cocktail?.ingredients[indexPath.row])
+                           and: self.cocktailDetailTableViewModel.cocktail?.ingredientProportions[indexPath.row])
             return cell
         case 2:
             let cell = CocktailDetailInstructionTableViewCell.dequeue(from: tableView, for: indexPath)
